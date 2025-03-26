@@ -38,6 +38,9 @@ class Admission::OphthalmologyController < ApplicationController
     end
   end
 
+  def update
+  end
+
   private
 
   def patient_params
