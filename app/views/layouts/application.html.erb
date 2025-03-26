@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DemoProject</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%#= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+
+    <%#= javascript_include_tag "application", type: "module" %>
+
+  </head>
+
+  <body>
+    <script>
+      console.log("application.js is loaded!");
+    </script>
+    <%= yield %>
+    <!-- Modal Frame -->
+    <turbo-frame id="modal">
+    </turbo-frame>
+  </body>
+</html>
