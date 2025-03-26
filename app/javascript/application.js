@@ -16,4 +16,4 @@ import "./controllers";
 // Load additional JS dependencies (Ensuring compatibility)
 // eg.
 // import "flowbite";import "./controllers"
-// import "@hotwired/turbo-rails"
+import "@hotwired/turbo-rails"
