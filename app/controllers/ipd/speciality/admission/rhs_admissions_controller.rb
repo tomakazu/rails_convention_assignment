@@ -1,4 +1,4 @@
-class Admission::OrthopedicsController < ApplicationController
+class Ipd::Speciality::Admission::RhsAdmissionsController < ApplicationController
   
   def index
     @admissions = Admission.all

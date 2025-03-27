@@ -1,10 +1,10 @@
-class Appointment::AppointmentsController < ApplicationController
+class Opd::Speciality::Appointment::RhsAppointmentsController < ApplicationController
   def index
-    @@appointments = @appointment.all
+    @ppointments = Appointment.all
   end
 
   def new
-    @@appointment = Appointment.new
+    @appointment = Appointment.new
     # render layout: "application" # Force default layout
   end
 
@@ -22,7 +22,7 @@ class Appointment::AppointmentsController < ApplicationController
 
 
   def create
-    @@appointment = Appointment.new(appointment_params)
+    @appointment = Appointment.new(appointment_params)
 
     if @@appointment.save
       respond_to do |format|
